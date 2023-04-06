@@ -37,14 +37,13 @@ const ChoiceBtnWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background: ${colors.darkgray};
   box-shadow: ${colors.boxShadow};
-  width: 322px;
+  width: 25em;
   height: 72px;
   border-radius: 20px;
   margin-top: 30px;
-  gap: 10px;
   cursor: pointer;
 
   &:hover ${ChoiceBtnIcon} {
@@ -59,6 +58,7 @@ const ChoiceBtnWrapperStyled = styled(ChoiceBtnWrapper)`
 
   ${ChoiceBtnIcon} {
     margin-right: 0;
+    font-size: 25px;
   }
 `
 

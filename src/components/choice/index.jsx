@@ -13,12 +13,13 @@ const ChoiceSection = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: ${colors.primary};
-  padding: 50px 0;
+  padding: 50px 20em;
 `
 
 const ChoiceTitle = styled.h1`
+  display: flex;
   font-weight: 700;
   font-size: 24px;
   font-style: normal;
@@ -30,11 +31,10 @@ const ChoiceTitle = styled.h1`
 
 const ChoiceBtnWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 36px;
+  width: 100%;
 `
 
 const Choice = () => {
