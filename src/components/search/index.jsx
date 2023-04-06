@@ -10,6 +10,7 @@ const colors = {
 
 const sizes = {
   searchInputWidth: '10%',
+  searchInputHeight: '30px',
 }
 
 const SearchSection = styled.div`
@@ -17,39 +18,41 @@ const SearchSection = styled.div`
   align-items: center;
   justify-content: center;
   background-color: ${colors.background};
-  padding: 20px 0;
   width: 100%;
+  height: 50px;
+`
+
+const SearchInputWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  text-align-last: center;
 `
 
 const SearchInput = styled.input`
-  width: ${sizes.searchInputWidth};
+  height: ${sizes.searchInputHeight};
   background-color: ${colors.background};
-  margin: 0 0 0 10px;
   font-weight: 500px;
-  font-size: 18px;
-  line-height: 19px;
-  align-self: center;
   border: unset;
   cursor: pointer;
 
   ::placeholder {
-    color: '#353535';
+    color: ${colors.placeholder};
     font-weight: bold;
     font-size: 18px;
-    line-height: 19px;
-    align-self: center;
   }
 `
 
 const Research = () => {
   return (
     <SearchSection>
-      <FontAwesomeIcon icon={faLocationDot} size="lg" />
-      <SearchInput
-        type="search"
-        name="search"
-        placeholder="Paris, Belleville"
-      />
+      <SearchInputWrapper>
+        <FontAwesomeIcon icon={faLocationDot} size="lg" />
+        <SearchInput
+          type="search"
+          name="search"
+          placeholder="Paris, Belleville"
+        />
+      </SearchInputWrapper>
     </SearchSection>
   )
 }

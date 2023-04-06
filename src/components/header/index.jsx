@@ -4,31 +4,36 @@ import colors from '../../utils/style/colors'
 import headerImage from '../../images/logo/ohmyfood.svg'
 import Research from '../search'
 
-const Section = styled.div`
+const HeaderSection = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  align-content: center;
   background: ${colors.primary};
 `
 
-const HeaderLogo = styled.div`
-  background-image: url(${headerImage});
+const HeaderLogoWrapper = styled.div`
+  display: flex;
   width: 200px;
   height: 34px;
+  margin: 30px 0;
+`
+
+
+const HeaderLogo = styled.div`
+  background-image: url(${headerImage});
+  width: 100%;
   background-size: cover;
   background-prosition: center;
-  margin: 40px 0;
-  border: none;
 `
 
 const Header = () => {
   return (
-    <Section>
-      <HeaderLogo />
+    <HeaderSection>
+      <HeaderLogoWrapper>
+        <HeaderLogo alt="Logo du header" />
+      </HeaderLogoWrapper>
       <Research />
-    </Section>
+    </HeaderSection>
   )
 }
 export default Header
