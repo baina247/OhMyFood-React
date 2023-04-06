@@ -31,10 +31,10 @@ const BoutonText = styled.p`
   color: ${colors.primary};
 `
 
-function Explore() {
+function Explore({text}) {
   return (
     <BoutonWrapper>
-      <BoutonText>Explorer nos restaurants</BoutonText>
+      <BoutonText>{text}</BoutonText>
     </BoutonWrapper>
   )
 }

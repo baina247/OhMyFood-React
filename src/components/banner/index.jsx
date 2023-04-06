@@ -20,12 +20,6 @@ const BannerText = styled.h1`
   padding: 0 0 30px 0;
   text-align: center;
   color: ${colors.secondary};
-  @media (max-width: 768px) {
-    ${
-      '' /* text-align: left;
-    font-size: 24px; */
-    }
-  }
 `
 
 const BannerSousText = styled.p`
@@ -36,12 +30,6 @@ const BannerSousText = styled.p`
   padding: 0 0 30px 0;
   text-align: center;
   color: ${colors.secondary};
-  @media (max-width: 768px) {
-    ${
-      '' /* text-align: left;
-    font-size: 24px; */
-    }
-  }
 `
 
 const Banner = () => {
@@ -51,7 +39,7 @@ const Banner = () => {
       <BannerSousText>
         Découvrez des restaurants d'exception, sélectionnés par nos soins.
       </BannerSousText>
-      <Explore />
+      <Explore text="Explorer nos restaurants" />
     </Section>
   )
 }

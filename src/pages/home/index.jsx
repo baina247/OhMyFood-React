@@ -3,13 +3,10 @@ import styled from 'styled-components'
 import Banner from '../../components/banner/index'
 import colors from '../../utils/style/colors'
 import Header from '../../components/header'
+import Choice from '../../components/choice'
 
 const Body = styled.div`
   background-color: ${colors.primary};
-
-  @media (max-width: 768px) {
-    ${'' /* padding: 0 2rem; */}
-  }
 `
 
 function Home() {
@@ -17,6 +14,7 @@ function Home() {
     <Body>
       <Header />
       <Banner />
+      <Choice />
     </Body>
   )
 }
