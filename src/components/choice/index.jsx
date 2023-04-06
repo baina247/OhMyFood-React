@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import colors from '../../utils/style/colors'
 import ChoiceBtn from '../boutons/choiceBtn'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobileScreenButton, faStore, faListUl } from '@fortawesome/free-solid-svg-icons'
+import {
+  faMobileScreenButton,
+  faStore,
+  faListUl,
+} from '@fortawesome/free-solid-svg-icons'
 
 const ChoiceSection = styled.div`
   display: flex;
@@ -38,9 +42,21 @@ const Choice = () => {
     <ChoiceSection>
       <ChoiceTitle>Fonctionnement</ChoiceTitle>
       <ChoiceBtnWrapper>
-        <ChoiceBtn icon={<FontAwesomeIcon icon={faMobileScreenButton} />} text="Choisissez un restaurant" counter={1} />
-        <ChoiceBtn icon={<FontAwesomeIcon icon={faListUl} />} text="Composez votre menu" counter={2} />
-        <ChoiceBtn icon={<FontAwesomeIcon icon={faStore} />} text="Dégustez au restaurant" counter={3} />
+        <ChoiceBtn
+          icon={<FontAwesomeIcon icon={faMobileScreenButton} />}
+          text="Choisissez un restaurant"
+          counter={1}
+        />
+        <ChoiceBtn
+          icon={<FontAwesomeIcon icon={faListUl} />}
+          text="Composez votre menu"
+          counter={2}
+        />
+        <ChoiceBtn
+          icon={<FontAwesomeIcon icon={faStore} />}
+          text="Dégustez au restaurant"
+          counter={3}
+        />
       </ChoiceBtnWrapper>
     </ChoiceSection>
   )

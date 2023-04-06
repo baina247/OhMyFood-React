@@ -31,7 +31,7 @@ const BoutonText = styled.p`
   color: ${colors.primary};
 `
 
-function Explore({text}) {
+function Explore({ text }) {
   return (
     <BoutonWrapper>
       <BoutonText>{text}</BoutonText>

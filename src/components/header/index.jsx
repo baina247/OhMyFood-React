@@ -18,7 +18,6 @@ const HeaderLogoWrapper = styled.div`
   margin: 30px 0;
 `
 
-
 const HeaderLogo = styled.div`
   background-image: url(${headerImage});
   width: 100%;
